@@ -1,0 +1,57 @@
+# 🪁 PipaStore 
+
+Bem-vindo ao **PipaStore**, um site desenvolvido como parte de um projeto acadêmico com o objetivo de aplicar todos os conceitos aprendidos em sala de aula de **HTML, CSS e JavaScript**.  
+O tema escolhido pelo grupo foi **"venda de pipas"**, combinando criatividade com funcionalidades completas de um sistema web simples, mas funcional.
+
+---
+
+## 🚀 Objetivo do Projeto
+
+Desenvolver um **site funcional** e **responsivo** que simula uma pequena loja de pipas, com:
+- Páginas públicas (landing page e conteúdo informativo);
+- Painel administrativo com login e senha;
+- Formulários de cadastro com armazenamento no **LocalStorage**;
+- Páginas de relatórios dinâmicos que exibem, editam e excluem dados;
+- Navegação fluida e interface amigável.
+
+---
+
+## 🧭 Estrutura do Site
+
+| Página | Tipo | Função |
+|--------|------|--------|
+| `index.html` | Pública | Página inicial com informações sobre a loja e produtos em destaque |
+| `login.html` | Pública | Página de login para acessar o painel administrativo |
+| `admin.html` | Restrita | Página principal do painel administrativo |
+| `cadastro_pipas.html` | Restrita | Formulário para cadastrar novos modelos de pipas |
+| `cadastro_clientes.html` | Restrita | Formulário para cadastro de clientes |
+| `cadastro_pedidos.html` | Restrita | Formulário para registrar pedidos de compra |
+| `relatorio_pipas.html` | Restrita | Relatório dinâmico de pipas cadastradas |
+| `relatorio_clientes.html` | Restrita | Relatório dinâmico de clientes cadastrados |
+| `relatorio_pedidos.html` | Restrita | Relatório dinâmico de pedidos registrados |
+
+---
+
+## 🧩 Funcionalidades
+
+✅ **Menu navegável** – permite a transição entre as páginas de forma simples e responsiva.  
+✅ **Formulários (3 no total)** – pipas, clientes e pedidos.  
+✅ **Armazenamento de dados** – via `LocalStorage` com manipulação em JavaScript.  
+✅ **Edição e exclusão de registros** diretamente dos relatórios.  
+✅ **Página administrativa protegida** – acesso via login e controle com `sessionStorage`.  
+✅ **Páginas de relatórios dinâmicos** que exibem os dados cadastrados.  
+✅ **Estilização completa** com **CSS Grid** e **Flexbox**.  
+✅ **Responsividade total** – site adaptado para desktop, tablet e celular.  
+✅ **Boas práticas de acessibilidade**, como uso de labels, contrastes e textos alternativos.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+| Tecnologia | Função |
+|-------------|--------|
+| **HTML5** | Estrutura das páginas |
+| **CSS3** | Estilização e layout responsivo |
+| **JavaScript (ES6+)** | Lógica, manipulação do DOM e armazenamento local |
+| **LocalStorage / SessionStorage** | Persistência de dados no navegador |
+| **Git e GitHub** | Controle de versão e colaboração em grupo |
