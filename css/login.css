@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #79DAF7;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* HEADER */
+.headercp {
+    width: 100%;
+    padding: 20px 40px;
+    background: #79F7C1;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    border-bottom: 3px solid #4FCF79;
+}
+
+.headercp h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #004d33;
+}
+
+/* MAIN */
+.maincp {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center;     /* centraliza verticalmente */
+    padding: 20px;
+}
+
+/* FORMULARIO */
+.secao-formcp {
+    background: #79B2F7;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.secao-formcp h2 {
+    margin-bottom: 20px;
+    color: #004d33;
+    font-size: 20px;
+}
+
+#formLogin {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#formLogin label {
+    font-weight: bold;
+    text-align: left;
+}
+
+#formLogin input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+/* BOTÃO */
+.btncp {
+    background: #0066ff;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: bold;
+}
+
+.btncp:hover {
+    background: #004dcc;
+}
+
+/* MENSAGEM DE ERRO */
+#msgErro {
+    font-size: 14px;
+    color: red;
+    margin-top: 10px;
+}
+
+/* FOOTER */
+.footercp {
+    bottom: 0;
+    width: 100%;
+    background: #79F7C1;
+    color: black;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 14px;
+}

@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login Admin</title>
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-    
+
+    <header class="headercp">
+        <h1>Login - Painel Administrativo</h1>
+    </header>
+
+    <main class="maincp">
+        <section class="secao-formcp">
+            <h2>Digite suas credenciais</h2>
+            <form id="formLogin">
+                <label>Usuário:</label>
+                <input type="text" id="username" required>
+
+                <label>Senha:</label>
+                <input type="password" id="password" required>
+
+                <button type="submit" class="btncp">Entrar</button>
+                <button type="button" class="btncp" id="btnVoltar">Voltar à página inicial</button>
+
+            </form>
+            <p id="msgErro" style="color:red; margin-top:10px;"></p>
+        </section>
+    </main>
+
+    <footer class="footercp">
+        <p>© 2025 Anjos Pipas — Todos os direitos reservados</p>
+    </footer>
+
+    <script src="../js/login.js"></script>
 </body>
 </html>

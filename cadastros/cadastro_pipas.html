@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pipas</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+
+<body>
+
+    <header class="headercp">
+        <h1>Painel Administrativo - Cadastro de Pipas</h1>
+
+        <nav>
+            <ul>
+                <li><a href="cadastro_pipas.html">Cadastrar pipas</a></li>
+                <li><a href="cadastro_clientes.html">Cadastrar clientes</a></li>
+                <li><a href="cadastro_pedidos.html">Cadastrar pedidos</a></li>
+                <li><a href="../admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="maincp">
+
+        <!-- Formulário de cadastro -->
+        <section class="secao-formcp">
+            <h2>Cadastrar nova pipa</h2>
+
+            <form id="formPipacp">
+                
+                <label>Preço (R$):</label>
+                <input type="number" id="precoPipacp" required>
+
+                <label>Imagem (caminho local):</label>
+                <input type="text" id="imgPipacp" placeholder="img/pipa1.jpg" required>
+
+                <button type="submit" class="btncp">Cadastrar Pipa</button>
+
+            </form>
+        </section>
+
+        <!-- Lista de pipas cadastradas -->
+        <section class="secao-listacp">
+            <h2>Pipas cadastradas</h2>
+
+            <div id="listaPipasAdmincp" class="lista-admincp"></div>
+        </section>
+
+    </main>
+
+    <footer class="footercp">
+        Painel administrativo - Anjos Pipas
+    </footer>
+
+    <script src="../js/pipas.js"></script>
+</body>
+</html>

@@ -1,5 +1,6 @@
-
-// Pipas iniciais no localStorage
+// ---------------------------
+// 1. Pipas iniciais no localStorage
+// ---------------------------
 if (!localStorage.getItem("pipas")) {
     const pipasIniciais = [
         { id: 1, preco: 5, imagem: "../img/1.jpg" },
@@ -12,8 +13,13 @@ if (!localStorage.getItem("pipas")) {
     localStorage.setItem("pipas", JSON.stringify(pipasIniciais));
 }
 
+// ---------------------------
+// 2. Carregar pipas na LANDING PAGE
+// ---------------------------
 function carregarPipas() {
     const container = document.getElementById("listaPipas");
+    if (!container) return;
+
     container.innerHTML = "";
 
     const pipas = JSON.parse(localStorage.getItem("pipas")) || [];
@@ -21,7 +27,7 @@ function carregarPipas() {
     pipas.forEach(pipa => {
         container.innerHTML += `
             <div class="card">
-                <img src="${pipa.imagem}" alt="${pipa.nome}">
+                <img src="${pipa.imagem}" alt="Pipa">
                 <p>R$ ${pipa.preco}</p>
                 <a href="../cadastros/cadastro_pedidos.html?id=${pipa.id}" class="btn">Fazer pedido</a>
             </div>
@@ -29,10 +35,42 @@ function carregarPipas() {
     });
 }
 
-carregarPipas();
+// ---------------------------
+// 3. Carregar pipas no ADMIN
+// ---------------------------
+function carregarPipasAdmin() {
+    const container = document.getElementById("listaPipasAdmincp");
+    if (!container) return;
 
-// Função para cadastrar nova pipa
-function cadastrarPipa(preco, imagem) {
+    container.innerHTML = "";
+
+    const pipas = JSON.parse(localStorage.getItem("pipas")) || [];
+
+    pipas.forEach(pipa => {
+        container.innerHTML += `
+            <div class="card-admincp">
+                <img src="${pipa.imagem}" alt="Pipa">
+                <p>R$ ${pipa.preco}</p>
+                <button class="btn-excluircp" onclick="excluirPipa(${pipa.id})">Excluir</button>
+            </div>
+        `;
+    });
+}
+
+// ---------------------------
+// 4. Cadastrar nova pipa (admin)
+// ---------------------------
+function cadastrarPipaAdmin(event) {
+    event.preventDefault();
+
+    const preco = parseFloat(document.getElementById("precoPipacp").value);
+    const imagem = document.getElementById("imgPipacp").value.trim();
+
+    if (isNaN(preco) || !imagem) {
+        alert("Preencha todos os campos corretamente!");
+        return;
+    }
+
     const pipas = JSON.parse(localStorage.getItem("pipas")) || [];
 
     const novaPipa = {
@@ -44,5 +82,33 @@ function cadastrarPipa(preco, imagem) {
     pipas.push(novaPipa);
     localStorage.setItem("pipas", JSON.stringify(pipas));
 
+    document.getElementById("formPipacp").reset();
+    carregarPipasAdmin();
     carregarPipas();
 }
+
+// ---------------------------
+// 5. Excluir pipa (admin)
+// ---------------------------
+function excluirPipa(id) {
+    if (!confirm("Tem certeza que deseja excluir esta pipa?")) return;
+
+    let pipas = JSON.parse(localStorage.getItem("pipas")) || [];
+    pipas = pipas.filter(p => p.id !== id);
+
+    localStorage.setItem("pipas", JSON.stringify(pipas));
+
+    carregarPipasAdmin();
+    carregarPipas();
+}
+
+// ---------------------------
+// 6. Inicialização
+// ---------------------------
+document.addEventListener("DOMContentLoaded", () => {
+    carregarPipas();
+    carregarPipasAdmin();
+
+    const form = document.getElementById("formPipacp");
+    if (form) form.addEventListener("submit", cadastrarPipaAdmin);
+});
