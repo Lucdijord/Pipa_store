@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Pipas</title>
+    <link rel="stylesheet" href="../css/cadastro_relatorio_pipas.css">
+</head>
+
+<body>
+
+    <header class="headercp">
+        <h1>Relatório de Pipas</h1>
+
+        <nav>
+            <ul>
+                <li><a href="../cadastros/cadastro_pipas.html">Cadastrar Pipas</a></li>
+                <li><a href="../cadastros/cadastro_clientes.html">Cadastrar Clientes</a></li>
+                <li><a href="../cadastros/cadastro_pedidos.html">Cadastrar Pedidos</a></li>
+                <li><a href="relatorio_pipas.html">Relatório de Pipas</a></li>
+                <li><a href="../index.html">Página Inicial</a></li>
+                <li><a href="../admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="maincp">
+
+        <section class="secao-listacp">
+            <h2>Pipas cadastradas</h2>
+
+            <div class="tabela-container">
+                <table class="tabela-relatorio">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Imagem</th>
+                            <th>Preço (R$)</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabelaPipas">
+                        <!-- Preenchido dinamicamente -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footercp">
+        Painel administrativo - Anjos Pipas
+    </footer>
+
+    <script src="../js/relatorios.js"></script>
+
+</body>
+</html>
