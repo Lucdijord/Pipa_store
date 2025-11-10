@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Pedido</title>
+    <link rel="stylesheet" href="/css/pedidos.css">
+</head>
+<body>
+    <header class="header">
+
+        <div class="logo">Anjos Pipas</div>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+            </ul>
+
+            <button id="login_bttn"><a href="../login.html">LOGIN</a></button>
+        </nav>
+    </header>
+
+  <div class="container">
+    <h1>Finalizar Pedido</h1>
+
+    <div class="produto">
+      <img id="pipaImagem" src="" alt="Imagem da Pipa">
+      <div class="info-produto">
+        <!-- nome removido conforme solicitado -->
+        <p id="pipaPreco"></p>
+      </div>
+    </div>
+
+    <form id="formPedido">
+      <label>Seu nome:</label>
+      <input type="text" id="nomeCliente" required>
+
+      <label>WhatsApp:</label>
+      <input type="text" id="whatsappCliente" required>
+
+      <label>Endereço:</label>
+      <input type="text" id="enderecoCliente" required>
+
+      <label>Observações:</label>
+      <textarea id="observacoesCliente" rows="3"></textarea>
+
+      <button type="submit" id="btnFinalizar">Finalizar Pedido</button>
+    </form>
+
+    <div id="mensagem"></div>
+  </div>
+  
+    <footer class="footer">© 2025 Anjos Pipas — Todos os direitos reservados.</footer>
+
+  <script src="../js/pedidos.js"></script>
+</body>
+</html>

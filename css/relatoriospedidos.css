@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #b3ecff;
+  margin: 0;
+  padding: 0;
+}
+
+.headercp {
+    width: 100%;
+    padding: 20px 40px;
+    background: #79F7C1;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;  /* título em cima, nav embaixo */
+    align-items: center;     /* centraliza horizontalmente */
+    gap: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: 3px solid #4FCF79;
+}
+
+/* Título do painel */
+.headercp h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4d1f00;
+}
+
+/* Navegação */
+.headercp nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap; /* quebra linha se necessário */
+    justify-content: center; /* centraliza horizontalmente */
+}
+
+.headercp nav ul li a {
+    text-decoration: none;
+    color: #004d33;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.headercp nav ul li a:hover {
+    background: #004d33;
+    color: #fff;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.nav a.active {
+  color: blue;
+}
+
+.container {
+  padding: 40px;
+  text-align: center;
+}
+
+h1 {
+  color: #0073e6;
+  margin-bottom: 20px;
+}
+
+/* ---- NOVO ESTILO DA TABELA ---- */
+.tabela-container {
+  width: 100%;
+  overflow-x: auto; /* evita quebrar layout em telas pequenas */
+}
+
+.tabela-relatorio {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.tabela-relatorio thead {
+  background: #4FCF79;
+  color: white;
+}
+
+.tabela-relatorio th,
+.tabela-relatorio td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabela-relatorio img {
+  width: 100px;
+  height: 70px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.tabela-relatorio tr:hover {
+  background: #e8f7ff;
+}
+/* ------------------------------- */
+
+.footer {
+  background-color: #6cf3b4;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
