@@ -20,4 +20,3 @@ function carregarRelatorioPipas() {
 }
 
 carregarRelatorioPipas();
-// FIM RELATÓRIO DE PIPAS CADASTRADAS

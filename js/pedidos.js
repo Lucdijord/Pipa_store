@@ -14,9 +14,8 @@ function carregarPipa() {
   const pipa = pipas.find(p => p.id === id);
 
   if (pipa) {
-    pipaSelecionada = pipa; // guarda para usar no submit
+    pipaSelecionada = pipa; 
     document.getElementById("pipaImagem").src = pipa.imagem;
-    // removido nome; exibimos apenas o preço
     // se preco for inteiro, mostra com duas casas
     const precoFormatado = (typeof pipa.preco === "number")
       ? pipa.preco.toFixed(2)
@@ -69,9 +68,6 @@ document.getElementById("formPedido").addEventListener("submit", (e) => {
   // Limpa o formulário
   document.getElementById("formPedido").reset();
 
-  // (opcional) manter a imagem e preço visíveis — caso queira remover, descomente abaixo:
-  // document.getElementById("pipaImagem").src = "";
-  // document.getElementById("pipaPreco").textContent = "";
 });
 
 carregarPipa();

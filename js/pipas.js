@@ -1,6 +1,4 @@
-// ---------------------------
-// 1. Pipas iniciais no localStorage
-// ---------------------------
+// Pipas do começo
 if (!localStorage.getItem("pipas")) {
     const pipasIniciais = [
         { id: 1, preco: 5, imagem: "../img/1.jpg" },
@@ -13,9 +11,7 @@ if (!localStorage.getItem("pipas")) {
     localStorage.setItem("pipas", JSON.stringify(pipasIniciais));
 }
 
-// ---------------------------
-// 2. Carregar pipas na LANDING PAGE
-// ---------------------------
+// Para carregar as pipas do array
 function carregarPipas() {
     const container = document.getElementById("listaPipas");
     if (!container) return;
@@ -35,9 +31,7 @@ function carregarPipas() {
     });
 }
 
-// ---------------------------
-// 3. Carregar pipas no ADMIN
-// ---------------------------
+// Pra carregas as pipas criadas no admin
 function carregarPipasAdmin() {
     const container = document.getElementById("listaPipasAdmincp");
     if (!container) return;
@@ -57,9 +51,7 @@ function carregarPipasAdmin() {
     });
 }
 
-// ---------------------------
-// 4. Cadastrar nova pipa (admin)
-// ---------------------------
+// Para cadastrar as pipas no admin
 function cadastrarPipaAdmin(event) {
     event.preventDefault();
 
@@ -87,9 +79,7 @@ function cadastrarPipaAdmin(event) {
     carregarPipas();
 }
 
-// ---------------------------
-// 5. Excluir pipa (admin)
-// ---------------------------
+// Para excluir pipas no admin
 function excluirPipa(id) {
     if (!confirm("Tem certeza que deseja excluir esta pipa?")) return;
 
@@ -102,9 +92,7 @@ function excluirPipa(id) {
     carregarPipas();
 }
 
-// ---------------------------
-// 6. Inicialização
-// ---------------------------
+// Carrega as pipas ao carregar a página
 document.addEventListener("DOMContentLoaded", () => {
     carregarPipas();
     carregarPipasAdmin();

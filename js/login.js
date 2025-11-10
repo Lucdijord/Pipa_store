@@ -5,7 +5,7 @@ document.getElementById("formLogin").addEventListener("submit", function(e){
     const password = document.getElementById("password").value.trim();
     const msgErro = document.getElementById("msgErro");
 
-    // Credenciais fixas (apenas para exemplo)
+    // Informações de login
     const adminUser = "admin";
     const adminPass = "1234";
 
@@ -14,12 +14,14 @@ document.getElementById("formLogin").addEventListener("submit", function(e){
         sessionStorage.setItem("adminLogado", "true");
 
         // Redireciona para página de admin
-        window.location.href = "../cadastros/cadastro_pipas.html";
+        window.location.href = "../admin.html";
     } else {
         msgErro.textContent = "Usuário ou senha incorretos!";
     }
 });
 
+
+// redireciona para a landing page
 document.getElementById("btnVoltar").addEventListener("click", function() {
     window.location.href = "../index.html"; // redireciona para a landing page
 });

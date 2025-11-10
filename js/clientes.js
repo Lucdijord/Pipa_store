@@ -7,7 +7,7 @@ document.getElementById("formPipacp").addEventListener("submit", function (e) {
   const telefone = document.querySelectorAll("#formPipacp input")[1].value.trim();
   const email = document.querySelectorAll("#formPipacp input")[2].value.trim();
 
-  // Validação simples
+  // Validação 
   if (!nome || !telefone) {
     alert("Preencha os campos obrigatórios!");
     return;
