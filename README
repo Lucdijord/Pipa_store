@@ -52,6 +52,6 @@ Desenvolver um **site funcional** e **responsivo** que simula uma pequena loja d
 |-------------|--------|
 | **HTML5** | Estrutura das páginas |
 | **CSS3** | Estilização e layout responsivo |
-| **JavaScript (ES6+)** | Lógica, manipulação do DOM e armazenamento local |
-| **LocalStorage / SessionStorage** | Persistência de dados no navegador |
+| **JavaScript** | Lógica, manipulação do DOM e armazenamento local |
+| **LocalStorage** | Persistência de dados no navegador |
 | **Git e GitHub** | Controle de versão e colaboração em grupo |
