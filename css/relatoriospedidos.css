@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 body {
   font-family: Arial, sans-serif;
   background-color: #b3ecff;
@@ -6,46 +13,50 @@ body {
 }
 
 .headercp {
-    width: 100%;
-    padding: 20px 40px;
-    background: #79F7C1;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;  /* título em cima, nav embaixo */
-    align-items: center;     /* centraliza horizontalmente */
-    gap: 15px;
-    text-align: center;
-    box-sizing: border-box;
-    border-bottom: 3px solid #4FCF79;
+  width: 100%;
+  padding: 20px 40px;
+  background: #79F7C1;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  /* título em cima, nav embaixo */
+  align-items: center;
+  /* centraliza horizontalmente */
+  gap: 15px;
+  text-align: center;
+  box-sizing: border-box;
+  border-bottom: 3px solid #4FCF79;
 }
 
 /* Título do painel */
 .headercp h1 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #4d1f00;
+  font-size: 24px;
+  font-weight: bold;
+  color: #004d33;
 }
 
 /* Navegação */
 .headercp nav ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    flex-wrap: wrap; /* quebra linha se necessário */
-    justify-content: center; /* centraliza horizontalmente */
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  /* quebra linha se necessário */
+  justify-content: center;
+  /* centraliza horizontalmente */
 }
 
 .headercp nav ul li a {
-    text-decoration: none;
-    color: #004d33;
-    font-weight: bold;
-    padding: 8px 12px;
-    border-radius: 6px;
+  text-decoration: none;
+  color: #004d33;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
 }
 
 .headercp nav ul li a:hover {
-    background: #004d33;
-    color: #fff;
+  background: #004d33;
+  color: #fff;
 }
 
 .logo {
@@ -74,15 +85,27 @@ body {
   text-align: center;
 }
 
-h1 {
-  color: #0073e6;
-  margin-bottom: 20px;
+/* ---- NOVO ESTILO DA TABELA ---- */
+
+.container-relatorio {
+  max-width: 1600px;
+  background: rgb(121, 178, 247);
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  margin: auto;
 }
 
-/* ---- NOVO ESTILO DA TABELA ---- */
+.container-relatorio h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
 .tabela-container {
   width: 100%;
-  overflow-x: auto; /* evita quebrar layout em telas pequenas */
+  overflow-x: auto;
+  /* evita quebrar layout em telas pequenas */
 }
 
 .tabela-relatorio {
@@ -116,6 +139,7 @@ h1 {
 .tabela-relatorio tr:hover {
   background: #e8f7ff;
 }
+
 /* ------------------------------- */
 
 .footer {
