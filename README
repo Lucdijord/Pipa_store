@@ -16,6 +16,16 @@ Desenvolver um **site funcional** e **responsivo** que simula uma pequena loja d
 
 ---
 
+## 💡 Como executar corretamente
+
+Você pode rodar o projeto usando:
+
+Live Server (extensão do VS Code) 
+
+Qualquer servidor HTTP simples (Apache, Nginx, Python, Node, etc.)
+
+---
+
 ## 🧭 Estrutura do Site
 
 | Página | Tipo | Função |
