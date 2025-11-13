@@ -23,6 +23,6 @@ document.getElementById("formLogin").addEventListener("submit", function(e){
 
 // redireciona para a landing page
 document.getElementById("btnVoltar").addEventListener("click", function() {
-    window.location.href = "../index.html"; // redireciona para a landing page
+    window.location.href = "../index.html"; 
 });
 
